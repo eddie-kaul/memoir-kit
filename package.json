@@ -1,0 +1,28 @@
+{
+  "name": "memoir-kit",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Help a parent record their life story by phone. Set up with Claude: open this folder and type /setup.",
+  "scripts": {
+    "setup": "bash kit.sh status",
+    "dev": "wrangler dev",
+    "seed": "node scripts/seed.js",
+    "export": "node scripts/export-docx.js",
+    "backup": "node scripts/backup.js",
+    "audit": "node scripts/audit.js",
+    "relink": "node scripts/relink.js",
+    "retranscribe": "node scripts/retranscribe.js",
+    "import-audio": "node scripts/import-audio.js"
+  },
+  "engines": {
+    "node": ">=22.12"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.40.0",
+    "docx": "^9.7.1"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

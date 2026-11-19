@@ -1,0 +1,37 @@
+# Rendered into wrangler.toml by `bash kit.sh`. Edit this template,
+# not wrangler.toml (which is regenerated and gitignored).
+name = "{{WORKER_NAME}}"
+main = "src/worker.js"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+account_id = "{{ACCOUNT_ID}}"
+workers_dev = true
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = true
+
+# Raw answer audio + cached question speech + the memoir document.
+[[r2_buckets]]
+binding = "AUDIO"
+bucket_name = "{{BUCKET}}"
+
+# Nightly backup copy.
+[[r2_buckets]]
+binding = "AUDIO_BACKUP"
+bucket_name = "{{BACKUP_BUCKET}}"
+
+# Nightly backup + data-safety audit ({{CRON_NOTE}}).
+[triggers]
+crons = ["{{CRON}}"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "{{DB_NAME}}"
+database_id = "{{DB_ID}}"
+
+[vars]
+CLAUDE_MODEL = "claude-sonnet-4-6"
+OPENAI_TTS_MODEL = "gpt-4o-mini-tts"
+OPENAI_STT_MODEL = "whisper-1"

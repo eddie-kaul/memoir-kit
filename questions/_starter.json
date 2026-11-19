@@ -1,0 +1,79 @@
+{
+  "_note": "Starter question bank. Not seeded directly – Claude copies and tailors these into questions/<person>.json. Questions are spoken aloud, so keep each one short, warm and plain.",
+  "user": {
+    "id": "example",
+    "display_name": "Mum",
+    "token": "",
+    "language_primary": "en",
+    "voice": "shimmer",
+    "about": ""
+  },
+  "questions": [
+    { "theme": "Family roots", "text": "What do you know about where your family comes from, and how they came to settle where you grew up?" },
+    { "theme": "Family roots", "text": "Tell me about your father. What kind of person was he?" },
+    { "theme": "Family roots", "text": "Tell me about your mother. What are your warmest memories of her?" },
+    { "theme": "Family roots", "text": "What do you remember about your grandparents?" },
+    { "theme": "Family roots", "text": "Was there a relative you were especially close to as a child? What made them special?" },
+    { "theme": "Family roots", "text": "Is there a family story that was told again and again when you were young?" },
+
+    { "theme": "Childhood", "text": "What is the very earliest thing you can remember?" },
+    { "theme": "Childhood", "text": "Describe the home you grew up in. Walk me through it, room by room." },
+    { "theme": "Childhood", "text": "What was a normal day like for you when you were about eight or nine?" },
+    { "theme": "Childhood", "text": "Who were your brothers, sisters, or the other children you grew up with? What were they like?" },
+    { "theme": "Childhood", "text": "What games did you play, and who did you play them with?" },
+    { "theme": "Childhood", "text": "What did your neighbourhood sound and smell like?" },
+    { "theme": "Childhood", "text": "Were you ever in trouble as a child? What happened?" },
+
+    { "theme": "School days", "text": "Tell me about your school. What was it like walking in on a normal morning?" },
+    { "theme": "School days", "text": "Was there a teacher you still remember? Why them?" },
+    { "theme": "School days", "text": "Who were your best friends at school, and what did you get up to together?" },
+    { "theme": "School days", "text": "What were you good at, and what did you find hard?" },
+    { "theme": "School days", "text": "What did you dream of becoming when you grew up?" },
+
+    { "theme": "Growing up", "text": "What was it like being a teenager in those days?" },
+    { "theme": "Growing up", "text": "What music, films, or fashions did you love when you were young?" },
+    { "theme": "Growing up", "text": "When did you first feel like a grown-up?" },
+    { "theme": "Growing up", "text": "Tell me about the first time you left home for a while. Where did you go?" },
+    { "theme": "Growing up", "text": "What did your parents hope you would do with your life? Did you agree?" },
+
+    { "theme": "Work & purpose", "text": "What was your very first job, and how did you get it?" },
+    { "theme": "Work & purpose", "text": "Tell me about the work you spent most of your life doing." },
+    { "theme": "Work & purpose", "text": "What day at work are you proudest of?" },
+    { "theme": "Work & purpose", "text": "Who taught you the most in your working life?" },
+    { "theme": "Work & purpose", "text": "Was there a hard decision about work that changed the course of your life?" },
+
+    { "theme": "Love & marriage", "text": "How did you meet the person you married? Tell me about the first time you saw them." },
+    { "theme": "Love & marriage", "text": "What made you realise they were the one?" },
+    { "theme": "Love & marriage", "text": "Tell me about your wedding day. What do you remember most?" },
+    { "theme": "Love & marriage", "text": "What were the first years together like? Where did you live?" },
+    { "theme": "Love & marriage", "text": "What has kept the two of you together through the years?" },
+
+    { "theme": "Raising a family", "text": "What do you remember about the day your first child was born?" },
+    { "theme": "Raising a family", "text": "What was each of your children like when they were small?" },
+    { "theme": "Raising a family", "text": "What was the hardest part of being a parent, and what was the best part?" },
+    { "theme": "Raising a family", "text": "Is there a funny family moment that still makes you laugh?" },
+    { "theme": "Raising a family", "text": "What did you want most for your children?" },
+
+    { "theme": "Home, food & traditions", "text": "Which dish takes you straight back to your childhood? Who made it?" },
+    { "theme": "Home, food & traditions", "text": "How did your family celebrate festivals and special days?" },
+    { "theme": "Home, food & traditions", "text": "Is there a tradition you kept going with your own family?" },
+    { "theme": "Home, food & traditions", "text": "Tell me about a place you lived that truly felt like home." },
+
+    { "theme": "Times of change", "text": "What big events in the world do you remember living through? How did they touch your family?" },
+    { "theme": "Times of change", "text": "Was there a time when money was tight? How did you manage?" },
+    { "theme": "Times of change", "text": "What was the biggest move or change you ever made?" },
+    { "theme": "Times of change", "text": "What has changed most in the world since you were young, and what do you miss?" },
+
+    { "theme": "Beliefs & values", "text": "What values did your parents pass on to you?" },
+    { "theme": "Beliefs & values", "text": "What has faith, or what you believe in, meant to you over the years?" },
+    { "theme": "Beliefs & values", "text": "Who do you admire most, and why?" },
+    { "theme": "Beliefs & values", "text": "Is there something you changed your mind about as you grew older?" },
+
+    { "theme": "Wisdom & legacy", "text": "What are you proudest of in your life?" },
+    { "theme": "Wisdom & legacy", "text": "What was the happiest time of your life?" },
+    { "theme": "Wisdom & legacy", "text": "What is the best advice anyone ever gave you?" },
+    { "theme": "Wisdom & legacy", "text": "What would you like your grandchildren to know about you?" },
+    { "theme": "Wisdom & legacy", "text": "If you could sit down with your younger self, what would you tell them?" },
+    { "theme": "Wisdom & legacy", "text": "How would you like to be remembered?" }
+  ]
+}

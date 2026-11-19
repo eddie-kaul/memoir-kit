@@ -1,0 +1,181 @@
+/* Elderly-first: huge targets, large type, high contrast, no clutter. */
+
+:root {
+  --bg: #f7f4ee;
+  --ink: #1c1a17;
+  --muted: #5b554c;
+  --green: #1f7a45;
+  --green-dark: #155c33;
+  --red: #c0392b;
+  --accent: #b5651d;
+  --card: #fffdf9;
+  --shadow: rgba(0, 0, 0, 0.12);
+}
+
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+#app {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 22px;
+}
+
+.screen {
+  width: 100%;
+  max-width: 560px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.hidden { display: none !important; }
+
+h1 { font-size: 2rem; margin: 0; }
+.lead { font-size: 1.3rem; color: var(--ink); margin: 0; }
+.big { font-size: 1.5rem; }
+.hint { font-size: 1.15rem; color: var(--muted); margin: 0; }
+
+.progress {
+  font-size: 1.1rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+.question {
+  font-size: 1.55rem;
+  font-weight: 600;
+  line-height: 1.3;
+  background: var(--card);
+  border-radius: 14px;
+  padding: 18px 18px;
+  box-shadow: 0 3px 12px var(--shadow);
+  margin: 0;
+}
+
+/* Huge buttons — minimum comfortable tap target for shaky hands */
+.huge-btn {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  background: var(--ink);
+  border: none;
+  border-radius: 999px;
+  padding: 0 30px;
+  min-height: 92px;
+  min-width: 220px;
+  width: 100%;
+  max-width: 320px;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+  transition: transform 0.05s ease, background 0.15s ease;
+}
+.huge-btn:active { transform: translateY(3px); box-shadow: 0 3px 0 rgba(0, 0, 0, 0.18); }
+.huge-btn.green { background: var(--green); }
+.huge-btn.green:active { background: var(--green-dark); }
+.huge-btn.recording { background: var(--red); }
+
+.text-btn {
+  font-size: 1.15rem;
+  color: var(--accent);
+  background: none;
+  border: 2px solid var(--accent);
+  border-radius: 999px;
+  padding: 11px 18px;
+  cursor: pointer;
+}
+.text-btn:active { background: rgba(181, 101, 29, 0.1); }
+
+.record-area { display: flex; flex-direction: column; align-items: center; gap: 16px; width: 100%; }
+
+.indicator {
+  font-size: 1.4rem;
+  color: var(--red);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.dot {
+  width: 20px;
+  height: 20px;
+  background: var(--red);
+  border-radius: 50%;
+  animation: pulse 1s infinite ease-in-out;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(1.4); }
+}
+
+.status { font-size: 1.3rem; color: var(--muted); min-height: 1.6em; margin: 0; }
+
+/* Previous / Next navigation row */
+.navrow {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  max-width: 320px;
+  justify-content: space-between;
+}
+.navrow .text-btn { flex: 1; }
+
+/* Secondary actions under the main button (compact, side by side) */
+.extras {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 360px;
+  margin-top: 2px;
+}
+.extras .text-btn { font-size: 1.05rem; padding: 10px 16px; }
+
+/* Topic / question browser */
+.screen-title { font-size: 1.9rem; margin: 0; }
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  max-width: 520px;
+}
+.list-btn {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: left;
+  background: var(--card);
+  color: var(--ink);
+  border: 2px solid #e4ddcf;
+  border-radius: 16px;
+  padding: 20px 22px;
+  cursor: pointer;
+  box-shadow: 0 3px 10px var(--shadow);
+  line-height: 1.3;
+}
+.list-btn:active { transform: translateY(2px); }
+.list-btn .sub { display: block; font-size: 1rem; font-weight: 500; color: var(--muted); margin-top: 6px; }
+.list-btn.answered { border-color: var(--green); }
+.list-btn .tick { color: var(--green); font-weight: 700; margin-right: 8px; }
+
+@media (max-width: 380px) {
+  html, body { font-size: 18px; }
+  .question { font-size: 1.7rem; }
+  .huge-btn { font-size: 1.5rem; min-height: 108px; }
+}

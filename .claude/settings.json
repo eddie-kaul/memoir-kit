@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bash kit.sh:*)",
+      "Bash(npm install:*)",
+      "Bash(bash kit.sh npm run export:*)",
+      "Bash(bash kit.sh npm run audit:*)",
+      "Bash(bash kit.sh npm run backup:*)",
+      "Edit(questions/**)",
+      "Write(questions/**)",
+      "Write(FEEDBACK.md)"
+    ],
+    "deny": [
+      "Bash(npx wrangler delete:*)",
+      "Bash(npx wrangler r2 object delete:*)",
+      "Bash(npx wrangler r2 bucket delete:*)",
+      "Bash(npx wrangler d1 delete:*)",
+      "Bash(wrangler delete:*)",
+      "Bash(wrangler r2 object delete:*)",
+      "Bash(wrangler r2 bucket delete:*)",
+      "Bash(wrangler d1 delete:*)"
+    ]
+  }
+}
